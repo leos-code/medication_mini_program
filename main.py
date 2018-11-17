@@ -3,8 +3,8 @@ import web
 from web.wsgiserver import CherryPyWSGIServer
 from medication import Medication
 
-CherryPyWSGIServer.ssl_certificate = "/opt/certificate/cert-1541730622105_haiboz.nanmofo.cn.crt"
-CherryPyWSGIServer.ssl_private_key = "/opt/certificate/cert-1541730622105_haiboz.nanmofo.cn.key"
+CherryPyWSGIServer.ssl_certificate = "/opt/certificate/*.crt"
+CherryPyWSGIServer.ssl_private_key = "/opt/certificate/*.key"
 
 urls = (
     '', 'index',
